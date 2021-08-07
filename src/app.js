@@ -90,3 +90,5 @@ app.get('*',(req,res)=>{  //* is a wild card
 app.listen(3000 , ()=>{
     console.log('Server is up on port 3000');
 });
+
+console.log("Testing additional checkin");
