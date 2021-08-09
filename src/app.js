@@ -6,6 +6,7 @@ const express = require('express');
 const hbs= require('hbs');
 
 const app = express ();
+const port =process.env.PORT || 3000;
 
 //Define the paths for express configation
 const publicDirectoryPath= path.join(__dirname, '../public');
@@ -87,8 +88,7 @@ app.get('*',(req,res)=>{  //* is a wild card
    })
 })
 
-app.listen(3000 , ()=>{
-    console.log('Server is up on port 3000');
+app.listen(port , ()=>{
+    console.log('Server is up on port ' + port);
 });
 
-console.log("Testing additional checkin");
